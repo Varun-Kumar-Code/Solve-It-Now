@@ -3,29 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Math Problem Generator & Solver</title>
-  <link rel="stylesheet" href="style.css">
+  <title>AI Powered Math Problem Generator & Solver</title>
+  <link rel="icon" type="image/svg" href="logo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>AI Math Problem Generator & Solver</h1>
-    
-    <!-- Math Problem Generator Section -->
-    <div class="section">
-      <h2>Generate Math Problem</h2>
-      <button id="generate-problem">Generate Problem</button>
-      <p id="generated-problem"></p>
-    </div>
+  <section>
+    <div class="container">
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle">🌙 Dark Mode</button>
 
-    <!-- Math Problem Solver Section -->
-    <div class="section">
-      <h2>Solve Math Problem</h2>
-      <input type="text" id="math-input" placeholder="Enter a math problem">
-      <button id="solve-problem">Solve</button>
-      <p id="solution"></p>
-    </div>
-  </div>
+      <h1>AI Math Problem Generator & Solver</h1>
+      
+      <!-- Math Problem Generator Section -->
+      <div class="section">
+        <h2>Generate Math Problem</h2>
+        <button id="generate-problem">Generate Problem</button>
+        <div class="output-box" id="generated-problem"></div>
+      </div>
 
+      <!-- Math Problem Solver Section -->
+      <div class="section">
+        <h2>Solve Math Problem</h2>
+        <textarea id="math-input" placeholder="Enter a math problem"></textarea>
+        <button id="solve-problem">Solve</button>
+        <div class="output-box" id="solution"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="copyrights">
+        <p>Version</p>
+        <p>2025 &copy; Edition | Designed with ❤️ and code..</p>
+      </div>
+      <div class="social-apps">
+        <p>Social Apps</p>
+        <div class="icon-row">
+          <a href="https://x.com/Varun_kumar1329" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://github.com/Varun-Kumar-R13" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/varun_official_13?igsh=NGJjMHFtNGdjanNv" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/varun-kumar13/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
