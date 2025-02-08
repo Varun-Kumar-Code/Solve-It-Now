@@ -22,7 +22,7 @@ Feel free to clone, modify, and explore!
 - 🌗 Theme Toggle: Implemented a manual dark/light mode switch
 - 🚀 Optimization: Improved UI responsiveness and functionality
 
-## 👥Contributing
+## 👥 Contributing
 Feel free to fork the repository and submit pull requests for any improvements or features!
 
 ## 📜 License
