@@ -1,5 +1,5 @@
 const API_KEY = 'AIzaSyD_szrlCkGVNhwYO30fVcY7_z_Sbc6ppq4'; // Replace with your API key
-const API_URL = 'https://api.openai.com/v1/chat/completions';
+const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY';
 
 // Generate Math Problem
 document.getElementById('generate-problem').addEventListener('click', async () => {
