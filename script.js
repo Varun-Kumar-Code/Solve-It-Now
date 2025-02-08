@@ -1,10 +1,19 @@
-const API_KEY = 'AIzaSyD_szrlCkGVNhwYO30fVcY7_z_Sbc6ppq4'; // Replace with your API key
-const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY';
+const API_KEY = 'Replace with your API key'; // Replace with your Gemini API key
+const API_URL = `Your API URL`; // Replace with your API URL
+
+// Theme Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+  body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+  themeToggle.textContent = body.dataset.theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
 
 // Generate Math Problem
 document.getElementById('generate-problem').addEventListener('click', async () => {
   const prompt = "Generate a random math problem (algebra, calculus, or geometry).";
-  const problem = await callOpenAI(prompt);
+  const problem = await callGemini(prompt);
   document.getElementById('generated-problem').innerText = problem;
 });
 
@@ -16,30 +25,36 @@ document.getElementById('solve-problem').addEventListener('click', async () => {
     return;
   }
   const prompt = `Solve the following math problem: ${problem}`;
-  const solution = await callOpenAI(prompt);
+  const solution = await callGemini(prompt);
   document.getElementById('solution').innerText = solution;
 });
 
-// Function to call OpenAI API
-async function callOpenAI(prompt) {
+// Function to call Gemini API
+async function callGemini(prompt) {
   try {
     const response = await fetch(API_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${API_KEY}`
       },
       body: JSON.stringify({
-        model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: prompt }],
-        max_tokens: 150
-      })
+        contents: [
+          {
+            parts: [
+              {
+                text: prompt, // The user's prompt
+              },
+            ],
+          },
+        ],
+      }),
     });
 
     const data = await response.json();
-    return data.choices[0].message.content.trim();
+    // Extract the generated text from Gemini's response
+    return data.candidates[0].content.parts[0].text.trim();
   } catch (error) {
-    console.error("Error calling OpenAI API:", error);
+    console.error("Error calling Gemini API:", error);
     return "An error occurred. Please try again.";
   }
 }
