@@ -1,4 +1,4 @@
-const API_KEY = 'your-openai-api-key'; // Replace with your API key
+const API_KEY = 'AIzaSyD_szrlCkGVNhwYO30fVcY7_z_Sbc6ppq4'; // Replace with your API key
 const API_URL = 'https://api.openai.com/v1/chat/completions';
 
 // Generate Math Problem
