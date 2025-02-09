@@ -81,7 +81,7 @@ button:hover {
 
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 5px 0px;
   font-size: 16px;
   border: 1px solid var(--box-border);
   border-radius: 8px;
