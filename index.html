@@ -14,25 +14,24 @@
 </head>
 <body>
   <section>
-    <div class="container">
-      <!-- Theme Toggle Button -->
-      <button id="theme-toggle">🌙 Dark Mode</button>
-
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <div class="container head">
       <h1>AI Math Problem Generator & Solver</h1>
       
       <!-- Math Problem Generator Section -->
-      <div class="section">
+      <div class="section problem">
         <h2>Generate Math Problem</h2>
-        <button id="generate-problem">Generate Problem</button>
-        <div class="output-box" id="generated-problem"></div>
+        <button id="generate-problem" class="btn-primary">Generate Problem</button>
+        <div class="output-box" id="generated-problem" hidden></div>
       </div>
 
       <!-- Math Problem Solver Section -->
-      <div class="section">
+      <div class="section solution">
         <h2>Solve Math Problem</h2>
         <textarea id="math-input" placeholder="Enter a math problem"></textarea>
-        <button id="solve-problem">Solve</button>
-        <div class="output-box" id="solution"></div>
+        <button id="solve-problem" class="btn-primary">Solve</button>
+        <div class="output-box" id="solution" hidden></div>
       </div>
     </div>
   </section>
