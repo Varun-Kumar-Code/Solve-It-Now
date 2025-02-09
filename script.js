@@ -17,6 +17,22 @@ document.getElementById('generate-problem').addEventListener('click', async () =
   document.getElementById('generated-problem').innerText = problem;
 });
 
+// Generate box
+document.addEventListener("DOMContentLoaded", function () {
+  const generateButton = document.getElementById("generate-problem");
+  const generatedProblemBox = document.getElementById("generated-problem");
+
+  generateButton.addEventListener("click", function () {
+    // Toggle the visibility of the generated problem box
+    generatedProblemBox.hidden = !generatedProblemBox.hidden;
+
+    // If the box is visible, add placeholder text
+    if (!generatedProblemBox.hidden && !generatedProblemBox.textContent.trim()) {
+      generatedProblemBox.textContent = "Wait generating for you...";
+    }
+  });
+});
+
 // Solve Math Problem
 document.getElementById('solve-problem').addEventListener('click', async () => {
   const problem = document.getElementById('math-input').value;
@@ -27,6 +43,22 @@ document.getElementById('solve-problem').addEventListener('click', async () => {
   const prompt = `Solve the following math problem: ${problem}`;
   const solution = await callGemini(prompt);
   document.getElementById('solution').innerText = solution;
+});
+
+// Output Box
+document.addEventListener("DOMContentLoaded", function () {
+  const solveButton = document.getElementById("solve-problem");
+  const solutionBox = document.getElementById("solution");
+
+  solveButton.addEventListener("click", function () {
+    // Toggle the visibility of the solution box
+    solutionBox.hidden = !solutionBox.hidden;
+
+    // If the solution box is visible, focus on it
+    if (!solutionBox.hidden) {
+      solutionBox.focus();
+    }
+  });
 });
 
 // Function to call Gemini API
