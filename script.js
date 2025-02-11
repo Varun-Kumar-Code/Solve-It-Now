@@ -1,4 +1,4 @@
-const API_KEY = 'Replace with your API key'; // Replace with your Gemini API key
+const API_KEY = 'Replace with your API key'; // Replace with your API key
 const API_URL = `Your API URL`; // Replace with your API URL
 
 // Theme Toggle
