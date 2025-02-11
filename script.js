@@ -13,7 +13,7 @@ themeToggle.addEventListener('click', () => {
 // Generate Math Problem
 document.getElementById('generate-problem').addEventListener('click', async () => {
   const prompt = "Generate a random math problem (algebra, calculus, or geometry).";
-  const problem = await callGemini(prompt);
+  const problem = await callyourapi(prompt);
   document.getElementById('generated-problem').innerText = problem;
 });
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // If the box is visible, add placeholder text
     if (!generatedProblemBox.hidden && !generatedProblemBox.textContent.trim()) {
-      generatedProblemBox.textContent = "Wait generating for you...";
+      generatedProblemBox.textContent = "Hold on, generating for you...";
     }
   });
 });
@@ -41,7 +41,7 @@ document.getElementById('solve-problem').addEventListener('click', async () => {
     return;
   }
   const prompt = `Solve the following math problem: ${problem}`;
-  const solution = await callGemini(prompt);
+  const solution = await callyourapi(prompt);
   document.getElementById('solution').innerText = solution;
 });
 
@@ -55,14 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
     solutionBox.hidden = !solutionBox.hidden;
 
     // If the solution box is visible, focus on it
-    if (!solutionBox.hidden) {
-      solutionBox.focus();
+    if (!solutionBox.hidden && !solutionBox.textContent.trim()) {
+      solutionBox.textContent = "Hold on, generating analytics...";
     }
   });
 });
 
-// Function to call Gemini API
-async function callGemini(prompt) {
+// Function to call Your API
+async function callyourapi(prompt) {
   try {
     const response = await fetch(API_URL, {
       method: 'POST',
@@ -86,7 +86,7 @@ async function callGemini(prompt) {
     // Extract the generated text from Gemini's response
     return data.candidates[0].content.parts[0].text.trim();
   } catch (error) {
-    console.error("Error calling Gemini API:", error);
+    console.error("Error calling Your API:", error);
     return "An error occurred. Please try again.";
   }
 }
