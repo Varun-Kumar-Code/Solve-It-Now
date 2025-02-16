@@ -1,5 +1,5 @@
 # AI-Math-Problem-Generator-Solver
-This AI-powered web application generates and solves mathematical problems using the Gemini API. Users can input a math problem or generate a random one, and the AI provides an instant solution. The interface includes a manual dark/light mode switch for better user experience
+This AI-powered web application generates and solves mathematical problems using the Gemini API. Users can input a math problem or generate a random one, and the AI provides an instant solution. The interface includes a manual dark/light mode switch for better user experience.
 <!--here-->
 
 ## ✨ Features
