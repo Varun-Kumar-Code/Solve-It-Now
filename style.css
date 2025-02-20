@@ -183,7 +183,7 @@ footer {
 }
 
 .icon-row a {
-  font-size: 20px; /* Adjust icon size */
+  font-size: 20px;
   color: #ffffff;
   transition: color 0.3s ease;
 }
