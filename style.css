@@ -197,7 +197,7 @@ footer {
   margin: 0 10px; /* Spacing between icons */
   font-size: 18px; /* Icon size */
   text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth hover effect */
+  transition: color 0.3s ease;
 }
 
 .social-apps a:hover {
