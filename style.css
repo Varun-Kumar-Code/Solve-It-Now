@@ -271,7 +271,7 @@ footer {
     transition: color 0.3s ease;
   }
   .social-apps a {
-    margin: 0 10px; /* Spacing between icons */
+    margin: 0 10px;
     font-size: 16px !important;
   }
   .footer-container p {
