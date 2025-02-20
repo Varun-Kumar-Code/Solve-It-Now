@@ -195,7 +195,7 @@ footer {
 .social-apps a {
   color: #ffffff; /* Icon color */
   margin: 0 10px; /* Spacing between icons */
-  font-size: 18px; /* Icon size */
+  font-size: 18px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
