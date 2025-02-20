@@ -179,7 +179,7 @@ footer {
 .icon-row {
   margin-top: 5px; /* Space between "Social Apps" text and icons */
   display: flex;
-  gap: 10px; /* Space between icons */
+  gap: 10px;
 }
 
 .icon-row a {
