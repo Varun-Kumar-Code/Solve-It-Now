@@ -89,7 +89,6 @@ async function callyourapi(prompt) {
   {
     console.error("Error calling Your API:", error);
     return "An error occurred. Please try again.";
-
   {
     console.error("Error calling Your API:", error);
     return "An error occurred. Please try again.";
