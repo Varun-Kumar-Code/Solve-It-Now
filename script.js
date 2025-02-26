@@ -87,8 +87,6 @@ async function callyourapi(prompt) {
     return data.candidates[0].content.parts[0].text.trim();
   } catch (error)
   {
-    console.error("Error calling Your API:", error);
-    return "An error occurred
   {
     console.error("Error calling Your API:", error);
     return "An error occurred. Please try again.";
