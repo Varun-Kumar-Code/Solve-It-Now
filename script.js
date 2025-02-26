@@ -13,7 +13,7 @@ themeToggle.addEventListener('click', () => {
 // Generate Math Problem
 document.getElementById('generate-problem').addEventListener('click', async () => {
   const prompt = "Generate a random math problem (algebra, calculus, or geometry).";
-  const problem = await callyourapi(prompt);
+  const problem = await callyourapi(prompt);// call your api
   document.getElementById('generated-problem').innerText = problem;
 });
 
@@ -41,7 +41,7 @@ document.getElementById('solve-problem').addEventListener('click', async () => {
     return;
   }
   const prompt = `Solve the following math problem: ${problem}`;
-  const solution = await callyourapi(prompt);
+  const solution = await callyourapi(prompt);// call your api 
   document.getElementById('solution').innerText = solution;
 });
 
