@@ -72,9 +72,6 @@ themeToggle.addEventListener('click', () => {
 
 
 
-
-
-
 // Generate Math Problem
 document.getElementById('generate-problem').addEventListener('click', async () => {
   const prompt = "Generate a random math problem (algebra, calculus, or geometry).";
