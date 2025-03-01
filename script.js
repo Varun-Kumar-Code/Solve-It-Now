@@ -33,6 +33,44 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Solve Math Problem
 document.getElementById('solve-problem').addEventListener('click', async () => {
   const problem = document.getElementById('math-input').value;
