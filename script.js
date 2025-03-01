@@ -79,9 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
 // Function to call Your API
 async function callyourapi(prompt) {
   try {
