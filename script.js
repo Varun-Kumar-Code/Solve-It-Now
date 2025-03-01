@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       generatedProblemBox.textContent = "Hold on, generating for you...";
     }
   });
-});\\\\\\\\\\
+});
 
 // Solve Math Problem
 document.getElementById('solve-problem').addEventListener('click', async () => {
