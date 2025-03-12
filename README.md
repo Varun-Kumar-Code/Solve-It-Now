@@ -11,7 +11,7 @@ This AI-powered web application generates and solves mathematical problems using
 
 ## 🛠️ Technology Used
 - **Frontend:** *HTML, CSS, and JavaScript*
-- **AI Model:** *Gemini API*
+- **AI Model:** *Gemini API / Open AI*
 - **UI Enhancements:** *Dark/Light mode switch*
 
 ## 👨‍💻 Contribution
