@@ -1,4 +1,4 @@
-<img src="SolveItNow" alt="SolveItNow">
+<img src="AI-Powered Math Problem Solver & Generator.png" alt="SolveItNow">
 
 # Solve-It-Now🐬
 <!--AI Math Problem Generator & Solver-->
